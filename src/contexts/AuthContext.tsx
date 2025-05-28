@@ -49,7 +49,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [state, setState] = useState<AuthState>(initialState);
 
   // Configure axios defaults
-  axios.defaults.baseURL = 'http://localhost:5000/api';
+  axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
   
   // Set auth token for all requests if it exists
   useEffect(() => {
