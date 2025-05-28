@@ -205,7 +205,7 @@ const ServicesPage: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="rate" className="form-label">Hourly Rate ($)</label>
+                  <label htmlFor="rate" className="form-label">Hourly Rate (₹)</label>
                   <input
                     type="number"
                     id="rate"
