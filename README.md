@@ -1,6 +1,7 @@
 # PayMint
+[PayMint](https://pay-mint-two.vercel.app/)
 
-A full-stack invoice generator for freelancers.
+A full-stack invoice creation and management system for freelancers.
 
 ## Overview
 PayMint is a full-stack web application designed to manage clients, invoices, services, and payments efficiently. It features a modern React-based frontend with a Node.js and Express backend, integrated with MongoDB for data storage. The application supports user authentication, PDF invoice generation, and data visualization.
@@ -65,6 +66,11 @@ vite.config.ts     # Vite configuration
    npm run server
    ```
 
-## Contributing
+## Deployments
+Frontend deployed at: https://pay-mint-two.vercel.app/
 
-Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
+Backend deployed at: https://paymint-backend.onrender.com
+
+## Contributions
+
+Any contributions are welcome!
