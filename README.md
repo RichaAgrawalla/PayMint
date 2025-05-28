@@ -57,13 +57,13 @@ vite.config.ts     # Vite configuration
    GOOGLE_CLIENT_SECRET=your_google_client_secret
    ```
 4. To start the frontend development server:
-  ```
-  npm run dev
-  ```
+   ```
+   npm run dev
+   ```
 5. To start the backend server:
-  ```
-  npm run server
-  ```
+   ```
+   npm run server
+   ```
 
 ## Contributing
 
