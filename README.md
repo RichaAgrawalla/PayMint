@@ -2,6 +2,9 @@
 
 A full-stack invoice generator for freelancers.
 
+## Overview
+PayMint is a full-stack web application designed to manage clients, invoices, services, and payments efficiently. It features a modern React-based frontend with a Node.js and Express backend, integrated with MongoDB for data storage. The application supports user authentication, PDF invoice generation, and data visualization.
+
 ## Features
 
 - User authentication and authorization
@@ -18,6 +21,22 @@ A full-stack invoice generator for freelancers.
 - Frontend: React (Vite), Tailwind CSS
 - Backend: Node.js, Express.js
 - Database: MongoDB (Atlas)
+
+## Project Structure
+
+```
+/src               # Frontend React application (TypeScript)
+/server            # Backend Node.js Express server
+/public            # Public assets and static files
+index.html         # Main HTML file
+package.json       # Project dependencies and scripts
+vite.config.ts     # Vite configuration
+```
+
+### Prerequisites
+- Node.js (v16 or higher recommended)
+- MongoDB instance (cloud)
+
 
 ## Setup
 
@@ -45,3 +64,7 @@ A full-stack invoice generator for freelancers.
   ```
   npm run server
   ```
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
