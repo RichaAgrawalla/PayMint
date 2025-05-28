@@ -4,9 +4,14 @@ A full-stack invoice generator for freelancers.
 
 ## Features
 
-- Create and send PDF invoices
-- Track paid/unpaid status
-- Client and service management
+- User authentication and authorization
+- Client management
+- Invoice creation, viewing, and management
+- Service management
+- Payment tracking
+- PDF invoice generation and export
+- Data visualization with charts
+- Email notifications
 
 ## Tech Stack
 
@@ -16,8 +21,27 @@ A full-stack invoice generator for freelancers.
 
 ## Setup
 
-1. Clone the repo
-2. Run `npm install` in root and `server/`
-3. Add `.env` file in root and server
-4. Start backend: `cd server && npm start`
-5. Start frontend: `npm run dev`
+1. Clone the repository
+   ```
+   git clone <repository-url>
+   cd paymint
+   ```
+2. Install dependencies
+   ```
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add necessary variables such as:
+   ```
+   MONGODB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   GOOGLE_CLIENT_ID=your_google_client_id
+   GOOGLE_CLIENT_SECRET=your_google_client_secret
+   ```
+4. To start the frontend development server:
+  ```
+  npm run dev
+  ```
+5. To start the backend server:
+  ```
+  npm run server
+  ```
