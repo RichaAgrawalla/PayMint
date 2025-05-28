@@ -127,5 +127,9 @@ router.put('/me', auth, async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+// Test route to check if /api/users is reachable
+router.get('/', (req, res) => {
+  res.json({ message: 'User routes are working!' });
+});
 
 export default router;
