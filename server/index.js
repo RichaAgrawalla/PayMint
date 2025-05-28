@@ -21,7 +21,11 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://pay-mint-two.vercel.app',
+  credentials: true,  // if you use cookies/auth that require credentials
+}));
+
 app.use(express.json());
 
 // Connect to MongoDB
