@@ -1,5 +1,5 @@
 # PayMint
-[PayMint](https://pay-mint-two.vercel.app/)
+[Click to open Website](https://pay-mint-two.vercel.app/)
 
 A full-stack invoice creation and management system for freelancers.
 
