@@ -129,8 +129,8 @@ export const generateInvoicePDF = async (invoice) => {
           .fontSize(10)
           .text(item.title, col1 + 10, y + 5, { width: 200 })
           .text(item.quantity.toString(), col2, y + 5, { width: 50, align: 'right' })
-          .text(`₹${item.rate.toFixed(2)}`, col3, y + 5, { width: 50, align: 'right' })
-          .text(`₹${item.amount.toFixed(2)}`, col4, y + 5, { width: 50, align: 'right' });
+          .text(`$${item.rate.toFixed(2)}`, col3, y + 5, { width: 50, align: 'right' })
+          .text(`$${item.amount.toFixed(2)}`, col4, y + 5, { width: 50, align: 'right' });
         y += 25;
       });
 
@@ -155,14 +155,14 @@ export const generateInvoicePDF = async (invoice) => {
         .fontSize(12)
         .font('Helvetica-Bold')
         .text('Subtotal:', totalsLeft, y, { width: 100, align: 'right' })
-        .text(`₹${invoice.subtotal.toFixed(2)}`, totalsLeft + 110, y, { width: 90, align: 'right' });
+        .text(`$${invoice.subtotal.toFixed(2)}`, totalsLeft + 110, y, { width: 90, align: 'right' });
       
       y += 25; // Consistent spacing between totals
       
       // Tax
       doc
         .text(`Tax (${invoice.taxRate}%):`, totalsLeft, y, { width: 100, align: 'right' })
-        .text(`₹${invoice.taxAmount.toFixed(2)}`, totalsLeft + 110, y, { width: 90, align: 'right' });
+        .text(`$${invoice.taxAmount.toFixed(2)}`, totalsLeft + 110, y, { width: 90, align: 'right' });
       
       y += 25; // Consistent spacing between totals
       
@@ -181,7 +181,7 @@ export const generateInvoicePDF = async (invoice) => {
         .fillColor(COLORS.primary)
         .fontSize(14)
         .text('Total:', totalsLeft, y, { width: 100, align: 'right' })
-        .text(`₹${invoice.total.toFixed(2)}`, totalsLeft + 110, y, { width: 90, align: 'right' });
+        .text(`$${invoice.total.toFixed(2)}`, totalsLeft + 110, y, { width: 90, align: 'right' });
 
       // Notes section with modern styling
       if (invoice.notes) {
